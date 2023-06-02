@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Головна сторінка</title>
+</head>
+<body>
+    <h1>Рандомні рецепти</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>{{ recipe.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
